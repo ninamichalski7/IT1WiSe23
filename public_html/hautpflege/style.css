@@ -1,2 +1,55 @@
-/* CSS Document */
+/* styles.css */
 
+/* Allgemeine Stile für den Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stile für die Überschrift */
+h1 {
+  color: #0066cc;
+}
+
+/* Stile für Links */
+a {
+  text-decoration: none;
+  color: #009900;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container-Stil */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Stile für die Navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Stil für eine Klasse mit dem Namen "highlight" */
+.highlight {
+  background-color: #ffffcc;
+  padding: 5px;
+}
