@@ -25,7 +25,8 @@ abbr {
 
 /* Schriftfamilie für p-Elemente
  */
-p { font-family: Verdana, Arial; }
+p { font-family: Verdana, Arial;
+	color: saddlebrown}
 
 /* Style für einen Hinweis
 * Einrücken um 50Pixel
