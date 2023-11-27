@@ -6,8 +6,21 @@
 </head>
 
 <body>
+	<p>Hier wird das Ergebnis stehen!</p>
 	<script>
-		alert(Math.sqrt((2*3)/9.81));
+		function fallzeitberechnung(hoehe, konstante)
+				{
+					return Math.sqrt((2*hoehe)/konstante);
+				}
+		let hoehe=15;
+		let gravitationskonstante=9.81;
+		let gravitationskonstanteMond=1.62;
+		let ergebnis = fallzeitberechnung(hoehe, gravitationskonstante);
+		let ergebnisMond = fallzeitberechnung(hoehe, gravitationskonstante);
+		
+		console.log(ergebnis);
+		console.log(ergebnisMond);
+		
 	</script>
 </body>
 </html>
