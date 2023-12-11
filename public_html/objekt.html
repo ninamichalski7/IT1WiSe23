@@ -9,22 +9,37 @@
 	<script>
 	
 		class Monster{
-			AnzAugen; // Anzahl Augen des Monsters
+			// Attribute
+			#AnzAugen;
+			AnzAugen; // Anzahl Augen des Monsters. # gibt an: Eigenschaft/Attribut nicht sichtbar ist.
+		
+		// Konstruktor
+		constructor(anzalAugen, groesse)
+		{
+			this.anzAugen=anzAugen;
+		}
 			
 			// Fähigkeiten
 			unsichtbarMachen()
 			{
 				console.log("Modus Unsichtbar ist aktiviert");	
 			}
+			feuerUnfGiftPfeile()
+			{
+				console.log("Feuer und Pfeile werden verschlossen");
+			}
+			
 		}
 	
-		const waechterDerUntewrwelt = new Monster ();
-		const zerstoererDerWelten = new Mosnter ();
-		waechterDerUntewrwelt.AnzAugen=8;
-		zerstoererDerWelten.AnzAugen=3;
+		const waechterDerUnterwelt = new Monster(15,150);
+		const zerstoererDerWelten = new Mosnter(3.100);
 		
-		console.log(waechterDerUntewrwelt.AnzAugen);
-		console.log(zerstoererDerWelten.AnzAugen);
+		
+		waechterDerUnterwelt.unsichtbarMachen();
+		zerstoererDerWelten.feuerUndGiftPfeile();
+		
+		console.log(waechterDerUnterwelt.anzAugen);
+		console.log(zerstoererDerWelten.anzAugen);
 	</script>
 </body>
 </html>
